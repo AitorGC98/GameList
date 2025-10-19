@@ -5,13 +5,18 @@
 ![GameList Logo](https://img.shields.io/badge/GameList-Tu%20comunidad%20gamer-blueviolet?style=for-the-badge)
 
 **Una plataforma social para gestionar, descubrir y discutir sobre videojuegos**
+<br/>
+
+<img src="readmeImages/GameList.jpg" alt="GameList Preview" width="450"/>
+
+<br/>
 
 [![Android](https://img.shields.io/badge/Android-7.0+-green.svg?style=flat&logo=android)](https://www.android.com/)
 [![Kotlin](https://img.shields.io/badge/Kotlin-1.9+-purple.svg?style=flat&logo=kotlin)](https://kotlinlang.org/)
 [![Firebase](https://img.shields.io/badge/Firebase-Latest-orange.svg?style=flat&logo=firebase)](https://firebase.google.com/)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg?style=flat)](LICENSE)
 
-[Características](#-características-principales) • [Tecnologías](#️-tecnologías) • [Instalación](#-instalación) • [Configuración](#-configuración-de-api-keys) • [Capturas](#-capturas-de-pantalla) • [Roadmap](#-roadmap)
+[Características](#-características-principales) • [Tecnologías](#️-tecnologías) • [Instalación](#-instalación) • [Configuración](#-configuración-de-api-keys)
 
 </div>
 
