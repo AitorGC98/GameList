@@ -13,7 +13,7 @@
 
 <br/>
 
-[![Download](https://img.shields.io/badge/📱_DESCARGAR_APK-ÚLTIMA_VERSIÓN-4CAF50?style=for-the-badge&logoColor=white&labelColor=1a1a1a)](https://github.com/tu-usuario/gamelist/releases/latest)
+[![Download](https://img.shields.io/badge/📱_DESCARGAR_APK-ÚLTIMA_VERSIÓN-4CAF50?style=for-the-badge&logoColor=white&labelColor=1a1a1a)]([https://github.com/tu-usuario/gamelist/releases/latest](https://github.com/AitorGC98/GameList/releases/tag/v1.0))
 
 <br/>
 
