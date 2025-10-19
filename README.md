@@ -5,9 +5,15 @@
 ![GameList Logo](https://img.shields.io/badge/GameList-Tu%20comunidad%20gamer-blueviolet?style=for-the-badge)
 
 **Una plataforma social para gestionar, descubrir y discutir sobre videojuegos**
-<br/>
+<br>
 
 <img src="readmeImages/GameList.jpg" alt="GameList Preview" width="450"/>
+
+<br/>
+
+<br/>
+
+[![Download](https://img.shields.io/badge/📱_DESCARGAR_APK-ÚLTIMA_VERSIÓN-4CAF50?style=for-the-badge&logoColor=white&labelColor=1a1a1a)](https://github.com/tu-usuario/gamelist/releases/latest)
 
 <br/>
 
