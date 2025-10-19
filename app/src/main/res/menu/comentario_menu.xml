@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_borrar"
+        android:title="Borrar comentario" />
+
+    <item
+        android:id="@+id/action_PermaBan"
+        android:title="Banear Permanentemente" />
+
+    <item
+        android:id="@+id/action_BanWeek"
+        android:title="Banear 1 semana" />
+    <item
+        android:id="@+id/action_Banday"
+        android:title="Banear 1 día" />
+    <item
+        android:id="@+id/action_BanMin"
+        android:title="Banear 15 minutos" />
+</menu>

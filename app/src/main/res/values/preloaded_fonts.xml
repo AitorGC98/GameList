@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/bruno_ace</item>
+        <item>@font/bruno_ace_sc</item>
+        <item>@font/bungee_shade</item>
+        <item>@font/codystar</item>
+        <item>@font/edu_nsw_act_foundation_semibold</item>
+        <item>@font/faster_one</item>
+        <item>@font/pixelify_sans_bold</item>
+        <item>@font/pixelify_sans_medium</item>
+        <item>@font/uncial_antiqua</item>
+        <item>@font/zen_dots</item>
+    </array>
+</resources>

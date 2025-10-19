@@ -1,0 +1,194 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="0dp">
+
+        <!-- Línea lateral (opcional) -->
+        <View
+            android:id="@+id/linea_respuesta"
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/white" />
+
+        <!-- Contenedor para los elementos del comentario -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingStart="8dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp">
+
+            <!-- Contenedor para la imagen de perfil y el nombre del usuario -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="4dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/baseline_person_24"
+                    app:shapeAppearanceOverlay="@style/CustomShape"
+                    android:clipToOutline="true"
+                    android:scaleType="centerCrop"
+                    app:strokeColor="@color/white"
+                    app:strokeWidth="2dp" />
+
+                <!-- Nombre del usuario -->
+                <TextView
+                    android:id="@+id/texto_nombre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/white"
+                    android:paddingStart="8dp"
+                    android:text="Nombre Usuario"
+                    android:textStyle="bold"
+                    android:textSize="16sp" />
+
+                <!-- Espaciador -->
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="24dp"
+                    android:layout_weight="1" />
+
+                <!-- Botón de borrar -->
+                <ImageButton
+                    android:id="@+id/imageButton_borrar"
+                    android:layout_width="wrap_content"
+                    android:background="@color/Transparente"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="borrar"
+                    app:srcCompat="@drawable/ic_borrar"
+                    app:tint="@color/icono_gris_claro"/>
+            </LinearLayout>
+
+            <!-- Comentario -->
+            <TextView
+                android:id="@+id/texto_comentario"
+                android:textColor="@color/white"
+                android:textColorLink="#24C628"
+                android:linksClickable="true"
+                android:autoLink="web"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Comentario" />
+
+            <!-- Fila de botones para responder, likes, dislikes y mostrar respuestas -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <!-- Texto para "Mostrar más" -->
+                <TextView
+                    android:id="@+id/texto_mostrar_mas"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Mostrar más" />
+
+                <!-- Espaciador -->
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="24dp"
+                    android:layout_weight="1" />
+
+
+
+                <!-- Número de dislikes -->
+                <TextView
+                    android:id="@+id/texto_num_dislikes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center_vertical"
+                    android:paddingEnd="4dp"/>
+
+                <!-- Botón de dislike -->
+                <ImageButton
+                    android:id="@+id/imageButton_dislike"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/Transparente"
+                    android:contentDescription="dislike"
+                    app:srcCompat="@drawable/ic_dislike"
+                    app:tint="@color/icono_gris_claro"/>
+
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent" />
+
+
+                <ImageButton
+                    android:id="@+id/imageButton_like"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/Transparente"
+                    android:contentDescription="dislike"
+                    app:srcCompat="@drawable/ic_like"
+                    app:tint="@color/icono_gris_claro"/>
+
+
+                <!-- Número de likes -->
+                <TextView
+                    android:id="@+id/texto_num_likes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center_vertical"
+                    android:paddingEnd="4dp"/>
+
+                <!-- Espaciador -->
+                <View
+                    android:layout_width="50dp"
+                android:layout_height="match_parent" />
+
+                <!-- Botón para mostrar respuestas -->
+                <ImageButton
+                    android:id="@+id/imageButton_mostrar_respuestas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/Transparente"
+                    android:contentDescription="mostrar_respuestas"
+                    app:srcCompat="@drawable/ic_comentario_blanco"
+                    app:tint="@color/icono_gris_claro"/>
+            </LinearLayout>
+
+            <!-- RecyclerView para mostrar las respuestas -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_respuestas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" /> <!-- Ocultar inicialmente -->
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Línea inferior -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/linea_clara" /> <!-- Define este color en colors.xml -->
+
+</LinearLayout>
+
+
+
+

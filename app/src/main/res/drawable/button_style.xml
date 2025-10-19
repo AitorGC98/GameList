@@ -1,0 +1,18 @@
+<!-- res/drawable/button_style.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Sombra más clara y sutil -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#f0f0f0" /> <!-- Color de sombra más claro -->
+        </shape>
+    </item>
+
+    <!-- Fondo blanco redondeado -->
+    <item android:left="1dp" android:top="1dp" android:right="1dp" android:bottom="2dp">
+        <shape android:shape="oval">
+            <solid android:color="#FFFFFF" /> <!-- Fondo blanco -->
+        </shape>
+    </item>
+</layer-list>
+
+

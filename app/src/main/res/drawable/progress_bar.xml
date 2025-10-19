@@ -1,0 +1,21 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Fondo gris (no completado) -->
+    <item android:id="@android:id/background">
+        <shape android:shape="rectangle">
+            <solid android:color="#D3D3D3" /> <!-- Color gris -->
+            <corners android:radius="5dp" /> <!-- Bordes redondeados -->
+        </shape>
+    </item>
+
+    <!-- Progreso verde (completado) -->
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape android:shape="rectangle">
+                <solid android:color="#4CAF50" /> <!-- Color verde -->
+                <corners android:radius="5dp" /> <!-- Bordes redondeados -->
+            </shape>
+        </clip>
+    </item>
+
+</layer-list>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <!-- Nueva Sección de Visualización -->
+    <PreferenceCategory app:title="Visualización">
+
+        <!-- Opción para recibir Noticias -->
+        <SwitchPreferenceCompat
+            app:key="display_news"
+            app:title="Noticias"
+            app:summary="Mostrar las noticias más recientes"
+            app:defaultValue="true" />
+
+        <!-- Opción para recibir Recomendados -->
+        <SwitchPreferenceCompat
+            app:key="display_recommended"
+            app:title="Recomendados"
+            app:summary="Mostrar recomendaciones de contenido"
+            app:defaultValue="true" />
+
+        <!-- Opción para activar/desactivar la Búsqueda -->
+        <SwitchPreferenceCompat
+            app:key="display_search"
+            app:title="Búsqueda"
+            app:summary="Activar o desactivar la búsqueda en la aplicación"
+            app:defaultValue="true" />
+
+        <!-- Opción para visualizar Foros -->
+        <SwitchPreferenceCompat
+            app:key="display_forums"
+            app:title="Foros"
+            app:summary="Mostrar contenido de foros"
+            app:defaultValue="true" />
+
+        <!-- Opción para visualizar Listas -->
+        <SwitchPreferenceCompat
+            app:key="display_lists"
+            app:title="Listas"
+            app:summary="Mostrar listas personalizadas de contenido"
+            app:defaultValue="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Legal">
+    <!-- Enlace a Términos de Uso -->
+    <Preference
+        android:key="terms_of_use"
+        android:title="Términos de Uso"
+        android:summary="Lee nuestros términos de uso."
+        android:onClick="openTermsOfUse"/>
+
+    <!-- Enlace a Política de Privacidad -->
+    <Preference
+        android:key="privacy_policy"
+        android:title="Política de Privacidad"
+        android:summary="Lee nuestra política de privacidad."
+        android:onClick="openPrivacyPolicy"/>
+
+</PreferenceCategory>
+
+    <PreferenceCategory app:title="Información de la Aplicación">
+        <!-- Enlace a Términos de Uso -->
+        <Preference
+            android:key="licencia"
+            android:title="Licencias"
+            android:summary="Lee las licencias de la aplicación."
+            android:onClick="openTermsOfUse"/>
+
+        <!-- Enlace a Política de Privacidad -->
+        <Preference
+            android:key="version"
+            android:title="Versión"
+            android:summary="1.0"
+            android:onClick="openPrivacyPolicy"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

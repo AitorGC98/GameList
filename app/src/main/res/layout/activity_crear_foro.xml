@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_vertical">
+
+        <!-- Título del foro -->
+        <EditText
+            android:layout_marginTop="40dp"
+            android:id="@+id/titulo_forum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:backgroundTintMode="@color/Transpatente"
+            android:backgroundTint="@color/white"
+            android:hint="Título del foro"
+            android:padding="12dp"
+            android:layout_marginBottom="20dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:maxLength="60" />
+
+        <TextView
+            android:id="@+id/titulo_counter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/white2"
+            android:textColor="@color/white2"
+            android:gravity="end"
+            android:text="0/60"
+            android:textSize="12sp"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Descripción del foro -->
+        <EditText
+            android:id="@+id/descripcion_forum"
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:layout_marginBottom="80dp"
+            android:textColorHint="@color/white2"
+            android:background="@drawable/border_editext"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:gravity="top|start"
+            android:hint="Descripción del foro"
+            android:maxLength="250"
+            android:maxLines="8"
+            android:minLines="5"
+            android:padding="12dp" />
+
+        <TextView
+            android:id="@+id/descripcion_counter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="0/250"
+            android:textColor="@color/white2"
+            android:textSize="12sp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Botón para crear el foro -->
+        <FrameLayout
+            android:layout_width="217dp"
+            android:layout_height="53dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="40dp">
+
+            <ImageButton
+                android:id="@+id/crear_foro_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/rounded_button_background"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/pixeli"
+                android:text="Crear Foro"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+</ScrollView>
+
+
+

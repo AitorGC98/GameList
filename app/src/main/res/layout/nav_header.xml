@@ -1,0 +1,103 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/colorMorado"
+    android:fitsSystemWindows="true"> <!-- Asegúrate de agregar esto -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="left">
+
+
+        <!-- Añadir un espacio entre la imagen y el botón -->
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/profile_image"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/baseline_person_24"
+            app:shapeAppearanceOverlay="@style/CustomShape"
+            android:clipToOutline="true"
+            android:scaleType="centerCrop"
+            app:strokeColor="@color/white"
+            app:strokeWidth="4dp" />
+
+        <Space
+            android:layout_width="85dp"
+            android:layout_height="wrap_content" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="49dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="300dp"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="Editar"
+            android:src="@drawable/ic_edit" />
+    </LinearLayout>
+
+    <!-- ProgressBar y texto para el nivel y experiencia -->
+    <TextView
+        android:id="@+id/level_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="@font/pixeli"
+        android:text="Nivel: 1"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <ProgressBar
+        android:id="@+id/experience_progress_bar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_width="230dp"
+        android:layout_height="10dp"
+        android:layout_marginTop="8dp"
+        android:progress="50"
+        android:progressDrawable="@drawable/progress_bar" />
+
+    <TextView
+        android:id="@+id/experience_text"
+        android:layout_width="wrap_content"
+        android:fontFamily="@font/pixeli"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:text="Exp: 20/100"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/profile_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="14dp"
+        android:fontFamily="@font/brunoace_regular"
+        android:text="Nombre del Usuario"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/profile_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="16dp"
+        android:text="correo@ejemplo.com"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+</LinearLayout>

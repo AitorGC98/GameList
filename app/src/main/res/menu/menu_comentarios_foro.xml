@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Opciones para el administrador -->
+    <item
+        android:id="@+id/action_borrar_foro"
+        android:title="Borrar foro"
+        android:visible="false" /> <!-- Se mostrará solo para administradores -->
+    <item
+        android:id="@+id/action_fijado"
+        android:title="Comentario fijado"
+        android:visible="false"/>
+    <item
+        android:id="@+id/action_ver_usuarios"
+        android:title="Ver usuarios"
+        android:visible="false" /> <!-- Se mostrará solo para administradores -->
+
+    <!-- Opción para todos los usuarios -->
+    <item
+        android:id="@+id/action_salir_foro"
+        android:title="Salir del foro" />
+</menu>

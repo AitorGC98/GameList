@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/opcionVerPerfil"
+        android:title="Ver Perfil" />
+    <item
+        android:id="@+id/opcionPermaBan"
+        android:title="Banear permanente" />
+    <item
+        android:id="@+id/opcionBaneardia"
+        android:title="Banear 1 día" />
+    <item
+        android:id="@+id/opcionBanearmin"
+        android:title="Banear 15 minutos" />
+    <item
+        android:id="@+id/opcionBanearsemana"
+        android:title="Banear 1 semana" />
+</menu>

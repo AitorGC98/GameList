@@ -1,0 +1,44 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.GameList" parent="Theme.Material3.DayNight">
+        <!-- Customize your dark theme here. -->
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <item name="actionBarStyle">@style/CustomActionBarStyle</item>
+    </style>
+
+    <!-- COLORES DE LA APP-->
+    <color name="whiteCardColor">#52394147</color>
+    <color name="loginBkColor">#686574</color>
+    <color name="colorFuente">#B5FFFFFF</color>
+    <color name="colorFuenteMorada">#9C27B0</color>
+    <color name="colorMorado">#494257</color>
+    <color name="colorMoradoSemiTransparente">#613F77</color>
+    <color name="colorMorado2">#494257</color>
+    <color name="colorStatus">#F3494257</color>
+    <color name="bordeNews">#55F1EAEA</color>
+    <color name="fondoNews">#646161</color>
+    <color name="colorFuenteSemiTrasparente">#B5A09F9F</color>
+    <color name="colorMoradoCons">#9C27B0</color>
+    <color name="colorFuenteCons">#FFFFFF</color>
+
+    <!-- Estilo personalizado del ActionBar -->
+    <style name="CustomActionBarStyle" parent="Widget.AppCompat.ActionBar.Solid">
+        <!-- Color de fondo del ActionBar -->
+        <item name="background">@color/colorMorado</item>
+        <!-- Configura el estilo del texto del título -->
+        <item name="titleTextStyle">@style/CustomActionBarTitle</item>
+    </style>
+
+    <!-- Estilo para el título del ActionBar -->
+    <style name="CustomActionBarTitle" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <!-- Color del texto -->
+        <item name="android:textColor">@color/white2</item>
+        <!-- Tamaño de la letra -->
+        <item name="android:textSize">20sp</item>
+        <!-- Fuente personalizada -->
+        <item name="android:fontFamily">@font/stalinist_regular</item>
+        <!-- Alineación del texto en el ActionBar -->
+        <item name="android:gravity">center</item>
+    </style>
+
+</resources>

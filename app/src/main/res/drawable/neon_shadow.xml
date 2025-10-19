@@ -1,0 +1,28 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Capa de sombra, solo en la parte inferior e izquierda -->
+    <item
+        android:right="5dp"
+        android:left="0dp"
+        android:top="5dp"
+        android:bottom="0dp">
+        <!-- Sombra, color verde neón -->
+        <shape xmlns:android="http://schemas.android.com/apk/res/android">
+            <solid android:color="#FFE400"/> <!-- Verde Neón -->
+            <corners android:radius="8dp" /> <!-- Bordes redondeados -->
+        </shape>
+    </item>
+
+    <!-- Capa del fondo blanco del CardView -->
+    <item
+        android:left="2dp"
+        android:right="2dp"
+        android:top="2dp"
+        android:bottom="4dp">
+        <!-- Fondo blanco -->
+        <shape xmlns:android="http://schemas.android.com/apk/res/android">
+            <solid android:color="@color/fondoNews"/>
+            <corners android:radius="8dp" />
+        </shape>
+    </item>
+</layer-list>
+

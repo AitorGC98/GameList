@@ -1,0 +1,96 @@
+<resources xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.GameList" parent="Theme.Material3.DayNight">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="actionBarStyle">@style/CustomActionBarStyle</item>
+    </style>
+
+
+    <style name="Theme.GameList" parent="Base.Theme.GameList">
+        <!-- Fondo para el layout (puede ser un color o un drawable) -->
+
+        <item name="android:windowBackgroundFallback">@color/fondoCardview</item>
+    </style>
+
+
+    <!-- COLORES DE LA APP-->
+    <color name="whiteCardColor">#fff</color>
+    <color name="loginBkColor">#f0f0f0</color>
+    <color name="colorFuente">#000000</color>
+    <color name="colorFuenteMorada">#9C27B0</color>
+    <color name="colorMorado">#9C27B0</color>
+    <color name="colorMoradoSemiTransparente">#999C27B0</color>
+    <color name="colorMorado2">#6643B4</color>
+    <color name="colorStatus">#DA9C27B0</color>
+    <color name="bordeNews">#55000000</color>
+    <color name="fondoNews">#FFFFFF</color>
+    <color name="colorFuenteSemiTrasparente">#B5A09F9F</color>
+    <color name="colorMoradoCons">#9C27B0</color>
+    <color name="colorFuenteCons">#FFFFFF</color>
+
+    <!-- Estilo personalizado del ActionBar -->
+    <style name="CustomActionBarStyle" parent="Widget.AppCompat.ActionBar.Solid">
+        <!-- Color de fondo del ActionBar -->
+        <item name="background">@color/colorMorado</item>
+        <!-- Configura el estilo del texto del título -->
+        <item name="titleTextStyle">@style/CustomActionBarTitle</item>
+    </style>
+
+    <!-- Estilo para el título del ActionBar -->
+    <style name="CustomActionBarTitle" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <!-- Color del texto -->
+        <item name="android:textColor">@color/white2</item>
+        <!-- Tamaño de la letra -->
+        <item name="android:textSize">20sp</item>
+        <!-- Fuente personalizada -->
+        <item name="android:fontFamily">@font/stalinist_regular</item>
+        <!-- Alineación del texto en el ActionBar -->
+        <item name="android:gravity">center</item>
+    </style>
+
+
+    <style name="Theme.GameList.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.GameList.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.GameList.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your No Action Bar theme here. -->
+        <item name="colorPrimary">@color/cardview_dark_background</item>
+        <item name="colorPrimaryDark">@color/cardview_shadow_end_color</item>
+        <item name="colorAccent">@color/colorMorado</item>
+    </style>
+    <style name="CustomSearchView" parent="Widget.AppCompat.SearchView">
+        <item name="android:textColor">#FFFFFF</item> <!-- Color del texto -->
+        <item name="android:textColorHint">#FFFFFF</item> <!-- Color del hint -->
+    </style>
+    <style name="CustomShape" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+    <style name="CustomShapeNews" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+
+    <style name="CustomShapeGame">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item> <!-- Ajusta este valor según el redondeado que desees -->
+    </style>
+
+
+        <style name="TabLayoutCustomText" parent="TextAppearance.Design.Tab">
+            <item name="android:textSize">8sp</item> <!-- Ajusta el tamaño a 12sp o al tamaño que prefieras -->
+            <item name="android:textColor">#FFFFFF</item> <!-- Puedes personalizar el color del texto también -->
+        </style>
+
+    <style name="RoundedImageViewStyle">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item> <!-- Cambia el tamaño del borde redondeado según tus necesidades -->
+    </style>
+
+
+</resources>

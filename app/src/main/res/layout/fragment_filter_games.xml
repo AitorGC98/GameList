@@ -1,0 +1,265 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:fillViewport="true"> <!-- Permitir que el ScrollView llene el viewport -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"> <!-- Padding general para el layout -->
+
+            <TextView
+                android:id="@+id/errorTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No se ha podido establecer conexión"
+                android:visibility="gone"
+                android:textColor="@color/white"
+                android:layout_gravity="center" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/lottieLoading"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                app:lottie_rawRes="@raw/animacion2"
+                android:layout_centerInParent="true"
+                app:lottie_autoPlay="true"
+                android:layout_gravity="center"
+                app:lottie_loop="true"/>
+            <!-- TextView para el título de juegos lanzados este mes -->
+            <TextView
+                android:id="@+id/titleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Estrenos de este mes"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:layout_marginBottom="12dp"
+                android:textStyle="bold"
+                android:visibility="gone"/> <!-- Oculto por defecto -->
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewGames"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/item_game_filter" />
+
+            <!-- TextView para el título de juegos gratuitos -->
+            <TextView
+                android:id="@+id/titleTextViewFree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:text="Top 10 próximos lanzamientos"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone" /> <!-- Oculto por defecto -->
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewGamesFree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/item_game_filter" />
+
+            <TextView
+                android:id="@+id/titleTextViewHistoria"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:text="Top 10 mejores juegos de la historia"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone" /> <!-- Oculto por defecto -->
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewGamesHistoria"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/item_game_filter" />
+
+            <TextView
+                android:id="@+id/titleTextViewCorto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:text="Top 10 juegos más cortos"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone" /> <!-- Oculto por defecto -->
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewGamesCorto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/item_game_filter" />
+
+            <TextView
+                android:id="@+id/titleTextViewLargos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:text="Top 10 juegos con más Bugs"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone" /> <!-- Oculto por defecto -->
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewGamesLargos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/item_game_filter" />
+
+            <TextView
+                android:id="@+id/titleTextViewSteam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:text="Top 10 juegos con LeaderBoards"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone" /> <!-- Oculto por defecto -->
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewGamesSteam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/item_game_filter" />
+
+            <TextView
+                android:id="@+id/titleTextViewMulti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:text="Top 10 multijugadores del Año"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone" /> <!-- Oculto por defecto -->
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewGamesMulti"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/item_game_filter" />
+
+            <TextView
+                android:id="@+id/titleTextViewAno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:text="Top 10 lanzamientos del Año"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone" /> <!-- Oculto por defecto -->
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewGamesAno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/item_game_filter" />
+
+            <TextView
+                android:id="@+id/titleTextViewNintendo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:text="Últimos lanzamientos de Nintendo"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone" /> <!-- Oculto por defecto -->
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewGamesNintendo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/item_game_filter" />
+
+            <TextView
+                android:id="@+id/titleTextViewPlay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:text="Últimos lanzamientos de PlayStation"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone" /> <!-- Oculto por defecto -->
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewGamesPlay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/item_game_filter" />
+
+            <TextView
+                android:id="@+id/titleTextViewXbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:text="Últimos lanzamientos de Xbox"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone" /> <!-- Oculto por defecto -->
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewGamesXbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/item_game_filter" />
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>
+
+
+
+

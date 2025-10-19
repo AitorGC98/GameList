@@ -1,0 +1,34 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_item4"
+        android:icon="@drawable/ic_light"
+        android:title="Tema" />
+
+    <item
+        android:id="@+id/nav_item1"
+        android:icon="@drawable/ic_statistics"
+        android:title="Estadísticas" />
+
+
+    <item
+        android:id="@+id/nav_item2"
+        android:icon="@drawable/ic_settings"
+        android:title="Configuración" />
+
+    <item
+        android:id="@+id/nav_item6"
+        android:icon="@drawable/ic_soporte"
+        android:title="Soporte" />
+
+
+    <item
+        android:id="@+id/nav_item3"
+        android:icon="@drawable/ic_about"
+        android:title="Acerca de" />
+
+    <item
+        android:id="@+id/nav_item5"
+        android:icon="@drawable/ic_logout"
+        android:title="Cerrar Sesión" />
+</menu>

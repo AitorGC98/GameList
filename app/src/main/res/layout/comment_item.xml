@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/neon_shadow"
+    android:layout_marginBottom="8dp"
+    android:elevation="2dp">
+
+    <!-- Contenedor Recomendación e Ícono -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="8dp">
+
+        <!-- Ícono de Recomendación -->
+        <ImageView
+            android:id="@+id/recommendationIcon"
+            android:layout_width="24dp"
+            android:layout_height="24dp" />
+
+        <!-- Texto Recomendación -->
+        <TextView
+            android:id="@+id/recommendationText"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content"
+            android:text="Recomendado"
+            android:textSize="14sp"
+            android:textColor="@android:color/holo_green_dark" />
+
+    </LinearLayout>
+
+    <!-- Nombre del usuario -->
+    <TextView
+        android:id="@+id/nombrUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre de Usuario"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorFuente"
+        android:layout_marginBottom="4dp" />
+
+    <!-- Comentario del usuario -->
+    <TextView
+        android:id="@+id/ComentarioUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Este es un comentario de ejemplo."
+        android:textSize="14sp"
+        android:textColor="@android:color/darker_gray"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Contenedor para la fecha -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end|center_vertical">
+
+        <!-- Fecha de publicación -->
+        <TextView
+            android:id="@+id/fechaPublicacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fecha de publicación"
+            android:textSize="12sp"
+            android:textColor="@color/colorFuente" />
+    </LinearLayout>
+</LinearLayout>
+
+

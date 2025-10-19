@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="#000000"
+    tools:context=".activity.StatisticsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Título de la sección de estadísticas -->
+        <TextView
+            android:id="@+id/tv_statistics_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Estadísticas"
+            android:textSize="30sp"
+            android:textColor="#FFEB3B"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="monospace"
+            android:shadowColor="#FF9800"
+            android:shadowDx="3"
+            android:shadowDy="3"
+            android:shadowRadius="5"/>
+
+        <!-- Subtítulo: Listas -->
+        <TextView
+            android:id="@+id/tv_lists_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Listas"
+            android:textSize="20sp"
+            android:textColor="#FFEB3B"
+            android:textStyle="italic"
+            android:layout_marginBottom="18dp"
+            android:layout_gravity="left"
+            android:fontFamily="monospace" />
+
+        <!-- Sección de juegos terminados -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="10dp"
+            android:background="#212121"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/tv_completed_games_label"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Juegos Terminados:"
+                android:textSize="18sp"
+                android:textColor="#FFEB3B"
+                android:fontFamily="monospace" />
+
+            <TextView
+                android:id="@+id/tv_completed_games_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:fontFamily="monospace"
+                android:text="0"
+                android:textColor="#FFEB3B"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Sección de juegos abandonados -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="10dp"
+            android:background="#212121"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/tv_abandoned_games_label"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Juegos Abandonados:"
+                android:textSize="18sp"
+                android:textColor="#FFEB3B"
+                android:fontFamily="monospace" />
+
+            <TextView
+                android:id="@+id/tv_abandoned_games_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="0"
+                android:textSize="18sp"
+                android:textColor="#FFEB3B"
+                android:textStyle="bold"
+                android:fontFamily="monospace" />
+        </LinearLayout>
+
+        <!-- Sección de juegos jugando actualmente -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="10dp"
+            android:background="#212121"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/tv_jugando_games_label"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Jugando Actualmente:"
+                android:textSize="18sp"
+                android:textColor="#FFEB3B"
+                android:fontFamily="monospace" />
+
+            <TextView
+                android:id="@+id/tv_jugando_games_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_marginRight="10dp"
+                android:textSize="18sp"
+                android:textColor="#FFEB3B"
+                android:textStyle="bold"
+                android:fontFamily="monospace" />
+        </LinearLayout>
+
+        <!-- Sección de juegos pendientes -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="10dp"
+            android:background="#212121"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:id="@+id/tv_pendiente_games_label"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Juegos Pendientes:"
+                android:textSize="18sp"
+                android:textColor="#FFEB3B"
+                android:fontFamily="monospace" />
+
+            <TextView
+                android:id="@+id/tv_pendiente_games_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="0"
+                android:textSize="18sp"
+                android:textColor="#FFEB3B"
+                android:textStyle="bold"
+                android:fontFamily="monospace" />
+        </LinearLayout>
+
+        <!-- Sección de foros -->
+        <TextView
+            android:id="@+id/tv_forum_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Foros"
+            android:textSize="20sp"
+            android:textColor="#FFEB3B"
+            android:textStyle="italic"
+            android:layout_marginBottom="18dp"
+            android:layout_gravity="left"
+            android:fontFamily="monospace" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="10dp"
+            android:background="#212121"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/tv_foros_games_label"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Foros a los que perteneces:"
+                android:textSize="18sp"
+                android:textColor="#FFEB3B"
+                android:fontFamily="monospace" />
+
+            <TextView
+                android:id="@+id/tv_foros_games_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_marginRight="10dp"
+                android:textSize="18sp"
+                android:textColor="#FFEB3B"
+                android:textStyle="bold"
+                android:fontFamily="monospace" />
+        </LinearLayout>
+
+        <!-- Sección para mostrar los géneros -->
+        <TextView
+            android:id="@+id/tv_Plataforma_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Géneros"
+            android:textSize="20sp"
+            android:textColor="#FFEB3B"
+            android:textStyle="italic"
+            android:layout_marginBottom="18dp"
+            android:layout_gravity="left"
+            android:fontFamily="monospace" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingVertical="4dp">
+
+            <!-- Género Acción -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="10dp"
+                android:background="#212121"
+                android:layout_marginBottom="8dp">
+                <TextView
+                    android:id="@+id/tv_action_games_label"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Acción:"
+                    android:textSize="18sp"
+                    android:textColor="#FFEB3B"
+                    android:fontFamily="monospace" />
+                <TextView
+                    android:id="@+id/tv_action_games_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="0"
+                    android:textSize="16sp"
+                    android:textColor="#FFEB3B"
+                    android:textStyle="bold"
+                    android:fontFamily="monospace" />
+            </LinearLayout>
+
+            <!-- Género Shooter -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="10dp"
+                android:background="#212121"
+                android:layout_marginBottom="8dp">
+                <TextView
+                    android:id="@+id/tv_shooter_games_label"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Shooter:"
+                    android:textSize="16sp"
+                    android:textColor="#FFEB3B"
+                    android:fontFamily="monospace" />
+                <TextView
+                    android:id="@+id/tv_shooter_games_value"
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="18sp"
+                    android:textColor="#FFEB3B"
+                    android:textStyle="bold"
+                    android:fontFamily="monospace" />
+            </LinearLayout>
+
+            <!-- Género Adventure -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="10dp"
+                android:background="#212121"
+                android:layout_marginBottom="8dp">
+                <TextView
+                    android:id="@+id/tv_adventure_games_label"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Aventura:"
+                    android:textSize="18sp"
+                    android:textColor="#FFEB3B"
+                    android:fontFamily="monospace" />
+                <TextView
+                    android:id="@+id/tv_adventure_games_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:layout_marginRight="10dp"
+                    android:textSize="16sp"
+                    android:textColor="#FFEB3B"
+                    android:textStyle="bold"
+                    android:fontFamily="monospace" />
+            </LinearLayout>
+
+            <!-- Género Platformer -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="10dp"
+                android:background="#212121"
+                android:layout_marginBottom="8dp">
+                <TextView
+                    android:id="@+id/tv_platformer_games_label"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Plataformas:"
+                    android:textSize="18sp"
+                    android:textColor="#FFEB3B"
+                    android:fontFamily="monospace" />
+                <TextView
+                    android:id="@+id/tv_platformer_games_value"
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="16sp"
+                    android:textColor="#FFEB3B"
+                    android:textStyle="bold"
+                    android:fontFamily="monospace" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

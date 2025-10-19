@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.agc.gamelist.home.ui.home.HomeFragment"
+        android:label="Noticias"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.agc.gamelist.home.ui.dashboard.DashboardFragment"
+        android:label="Busqueda"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.agc.gamelist.home.ui.notifications.NotificationsFragment"
+        android:label="Listas"
+        tools:layout="@layout/fragment_notifications" />
+
+    <fragment
+        android:id="@+id/navigation_new_feature"
+        android:name="com.agc.gamelist.home.ui.ForumFragment"
+        android:label="Foros"
+        tools:layout="@layout/fragment_forum" />
+
+    <fragment
+        android:id="@+id/navigation_filter"
+        android:name="com.agc.gamelist.home.ui.FilterGamesFragment"
+        android:label="Recomendados"
+        tools:layout="@layout/fragment_filter_games" />
+
+</navigation>

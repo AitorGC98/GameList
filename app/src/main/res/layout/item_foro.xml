@@ -1,0 +1,64 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:paddingEnd="16dp"
+    android:paddingStart="16dp"
+    android:layout_marginTop="0dp"> <!-- Margen superior para separar los items -->
+
+<TextView
+    android:layout_marginTop="12dp"
+    android:id="@+id/titulo_forum"
+    android:fontFamily="@font/brunoace_regular"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textColor="@color/white"
+    android:textSize="18sp"
+    android:textStyle="bold"
+    android:layout_marginBottom="1dp"/>
+
+    <TextView
+        android:id="@+id/descripcion_forum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/white2"
+        android:textSize="14sp" />
+
+    <!-- Contenedor para el icono y el texto del número de usuarios -->
+<LinearLayout
+android:layout_width="match_parent"
+    android:layout_marginTop="10dp"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical">
+
+<ImageView
+android:id="@+id/icono_usuarios"
+android:layout_width="24dp"
+android:layout_height="24dp"
+app:srcCompat="@drawable/baseline_person_24"
+android:layout_marginEnd="4dp"/> <!-- Icono a la izquierda con margen a la derecha -->
+
+<TextView
+android:id="@+id/numero_usuarios"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:textColor="@color/white"
+android:textSize="14sp"
+android:text=""/> <!-- Texto del número de usuarios -->
+    </LinearLayout>
+
+    <!-- Línea separadora blanca -->
+<View
+android:layout_width="match_parent"
+android:layout_height="1dp"
+android:background="@android:color/white"
+android:layout_marginTop="12dp"/>
+    </LinearLayout>
+
+
